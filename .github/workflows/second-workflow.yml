@@ -1,0 +1,15 @@
+name: push_workflow
+on:
+    push:
+        branches:
+            - main
+jobs:
+    first-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: welcome greetings
+              run: echo "Hello World"
+            - name: project
+              run: echo "this is my second gha workflow"
+            - name: End greetings
+              run: echo "Good Bye"                
